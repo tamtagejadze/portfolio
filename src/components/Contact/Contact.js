@@ -4,9 +4,6 @@ import {BsPatchCheckFill} from 'react-icons/bs';
 import {BsFillTelephoneFill} from 'react-icons/bs';
 import {MdMail} from 'react-icons/md';
 
-import {MdOutlineMail} from 'react-icons/md';
-import {BsWhatsapp} from 'react-icons/bs';
-import {FaViber} from 'react-icons/fa';
 
 function Contact() {
   return (
