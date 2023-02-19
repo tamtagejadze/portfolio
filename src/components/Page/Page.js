@@ -1,28 +1,11 @@
-import React, { useState } from 'react';
 import {FiGithub} from 'react-icons/fi';
 import {FaLinkedinIn} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Page({children}) {
-  const [activeNav, setActiveNav] = useState('#')
+  
   return (
    <div>
-    <header>
-      <nav className='nav-bar'>
-        <ul className='permalinks'>
-          <li>
-            <Link to={'/'} onClick={() => setActiveNav('#')} className={activeNav==='#' ? 'active' : ''}>Home</Link>
-          </li>
-          <li>
-            <Link to={"/portfolio"} onClick={() => setActiveNav('#portfolio')} className={activeNav==='#portfolio' ? 'active' : ''}>Portfolio</Link>
-          </li>
-          <li>
-            <Link to={'/contact'} onClick={() => setActiveNav('#contact')} className={activeNav==='#contact' ? 'active' : ''}>Contact</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
     {children}
     
     <footer>
